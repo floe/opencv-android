@@ -1,10 +1,10 @@
 # opencv-android-studio
 
-[![Release](https://jitpack.io/v/floe/opencv-android.svg)](https://jitpack.io/#floe/opencv-android)
+[![Release](https://jitpack.io/v/floe/opencv-android.svg)](https://jitpack.io/#floe/opencv-android/3.3.1)
 The OpenCV SDK for Android as a ready-to-go module for Android Studio 3.0.
 
 ## Installation
-This repository has JitPack.io support, so you can integrate it directly into your Android Studio projects by following the instructions on https://jitpack.io/#floe/opencv-android.
+This repository has JitPack.io support, so you can integrate it directly into your Android Studio projects by following the instructions on https://jitpack.io/#floe/opencv-android/3.3.1.
 
 _Note_: this is only the Java component. You will also need to install the *OpenCV Manager* app, which provides the native libraries and is either available from the Play Store (outdated) or directly as an APK from https://github.com/floe/opencv-android/tree/master/manager.
 
