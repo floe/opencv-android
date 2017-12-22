@@ -18,6 +18,6 @@ which has been deprecated for a long time in favor of Android Studio.
 This repository simply contains the resulting module from a clean import of the legacy Eclipse project, plus the manager APKs.
 
 (Of course, the clean solution would be to have the OpenCV build process output Android Studio modules right away. 
-But I don't have time for that ;-)
+But I don't have time for that. If you feel you want to tackle this, see discussion at https://github.com/opencv/opencv/issues/5003 ;-)
 
 _Note_: I'm currently using outdated build tools in the project (`gradle:2.3.2` and `android-maven-gradle-plugin:1.5`). This is because jitpack.io doesn't yet seem to support the current gradle version 3.0.1. I'll hopefully be able to update this soon.
