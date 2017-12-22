@@ -1,4 +1,6 @@
 # opencv-android-studio
+
+[![Release](https://jitpack.io/v/floe/opencv-android-studio.svg)](https://jitpack.io/#floe/opencv-android)
 The OpenCV SDK for Android as a ready-to-go module for Android Studio 3.0.
 
 ## Installation
