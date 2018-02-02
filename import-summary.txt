@@ -81,7 +81,6 @@ so manually move them:
 * javadoc/org/opencv/dnn/
 * javadoc/org/opencv/dnn/DictValue.html
 * javadoc/org/opencv/dnn/Dnn.html
-* javadoc/org/opencv/dnn/Importer.html
 * javadoc/org/opencv/dnn/Layer.html
 * javadoc/org/opencv/dnn/Net.html
 * javadoc/org/opencv/dnn/package-frame.html
@@ -99,11 +98,9 @@ so manually move them:
 * javadoc/org/opencv/features2d/BOWKMeansTrainer.html
 * javadoc/org/opencv/features2d/BOWTrainer.html
 * javadoc/org/opencv/features2d/BRISK.html
-* javadoc/org/opencv/features2d/DescriptorExtractor.html
 * javadoc/org/opencv/features2d/DescriptorMatcher.html
 * javadoc/org/opencv/features2d/FastFeatureDetector.html
 * javadoc/org/opencv/features2d/Feature2D.html
-* javadoc/org/opencv/features2d/FeatureDetector.html
 * javadoc/org/opencv/features2d/Features2d.html
 * javadoc/org/opencv/features2d/FlannBasedMatcher.html
 * javadoc/org/opencv/features2d/GFTTDetector.html
@@ -130,6 +127,7 @@ so manually move them:
 * javadoc/org/opencv/imgproc/package-tree.html
 * javadoc/org/opencv/ml/
 * javadoc/org/opencv/ml/ANN_MLP.html
+* javadoc/org/opencv/ml/ANN_MLP_ANNEAL.html
 * javadoc/org/opencv/ml/Boost.html
 * javadoc/org/opencv/ml/DTrees.html
 * javadoc/org/opencv/ml/EM.html

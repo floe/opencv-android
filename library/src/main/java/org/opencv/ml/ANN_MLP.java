@@ -10,6 +10,7 @@ import org.opencv.core.TermCriteria;
 
 // C++: class ANN_MLP
 //javadoc: ANN_MLP
+
 public class ANN_MLP extends StatModel {
 
     protected ANN_MLP(long addr) { super(addr); }
@@ -18,9 +19,12 @@ public class ANN_MLP extends StatModel {
     public static final int
             BACKPROP = 0,
             RPROP = 1,
+            ANNEAL = 2,
             IDENTITY = 0,
             SIGMOID_SYM = 1,
             GAUSSIAN = 2,
+            RELU = 3,
+            LEAKYRELU = 4,
             UPDATE_WEIGHTS = 1,
             NO_INPUT_SCALE = 2,
             NO_OUTPUT_SCALE = 4;
@@ -91,6 +95,48 @@ public class ANN_MLP extends StatModel {
     {
         
         TermCriteria retVal = new TermCriteria(getTermCriteria_0(nativeObj));
+        
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getAnnealCoolingRatio()
+    //
+
+    //javadoc: ANN_MLP::getAnnealCoolingRatio()
+    public  double getAnnealCoolingRatio()
+    {
+        
+        double retVal = getAnnealCoolingRatio_0(nativeObj);
+        
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getAnnealFinalT()
+    //
+
+    //javadoc: ANN_MLP::getAnnealFinalT()
+    public  double getAnnealFinalT()
+    {
+        
+        double retVal = getAnnealFinalT_0(nativeObj);
+        
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getAnnealInitialT()
+    //
+
+    //javadoc: ANN_MLP::getAnnealInitialT()
+    public  double getAnnealInitialT()
+    {
+        
+        double retVal = getAnnealInitialT_0(nativeObj);
         
         return retVal;
     }
@@ -195,6 +241,20 @@ public class ANN_MLP extends StatModel {
 
 
     //
+    // C++:  int getAnnealItePerStep()
+    //
+
+    //javadoc: ANN_MLP::getAnnealItePerStep()
+    public  int getAnnealItePerStep()
+    {
+        
+        int retVal = getAnnealItePerStep_0(nativeObj);
+        
+        return retVal;
+    }
+
+
+    //
     // C++:  int getTrainMethod()
     //
 
@@ -226,6 +286,62 @@ public class ANN_MLP extends StatModel {
     {
         
         setActivationFunction_1(nativeObj, type);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void setAnnealCoolingRatio(double val)
+    //
+
+    //javadoc: ANN_MLP::setAnnealCoolingRatio(val)
+    public  void setAnnealCoolingRatio(double val)
+    {
+        
+        setAnnealCoolingRatio_0(nativeObj, val);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void setAnnealFinalT(double val)
+    //
+
+    //javadoc: ANN_MLP::setAnnealFinalT(val)
+    public  void setAnnealFinalT(double val)
+    {
+        
+        setAnnealFinalT_0(nativeObj, val);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void setAnnealInitialT(double val)
+    //
+
+    //javadoc: ANN_MLP::setAnnealInitialT(val)
+    public  void setAnnealInitialT(double val)
+    {
+        
+        setAnnealInitialT_0(nativeObj, val);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void setAnnealItePerStep(int val)
+    //
+
+    //javadoc: ANN_MLP::setAnnealItePerStep(val)
+    public  void setAnnealItePerStep(int val)
+    {
+        
+        setAnnealItePerStep_0(nativeObj, val);
         
         return;
     }
@@ -402,6 +518,15 @@ public class ANN_MLP extends StatModel {
     // C++:  TermCriteria getTermCriteria()
     private static native double[] getTermCriteria_0(long nativeObj);
 
+    // C++:  double getAnnealCoolingRatio()
+    private static native double getAnnealCoolingRatio_0(long nativeObj);
+
+    // C++:  double getAnnealFinalT()
+    private static native double getAnnealFinalT_0(long nativeObj);
+
+    // C++:  double getAnnealInitialT()
+    private static native double getAnnealInitialT_0(long nativeObj);
+
     // C++:  double getBackpropMomentumScale()
     private static native double getBackpropMomentumScale_0(long nativeObj);
 
@@ -423,12 +548,27 @@ public class ANN_MLP extends StatModel {
     // C++:  double getRpropDWPlus()
     private static native double getRpropDWPlus_0(long nativeObj);
 
+    // C++:  int getAnnealItePerStep()
+    private static native int getAnnealItePerStep_0(long nativeObj);
+
     // C++:  int getTrainMethod()
     private static native int getTrainMethod_0(long nativeObj);
 
     // C++:  void setActivationFunction(int type, double param1 = 0, double param2 = 0)
     private static native void setActivationFunction_0(long nativeObj, int type, double param1, double param2);
     private static native void setActivationFunction_1(long nativeObj, int type);
+
+    // C++:  void setAnnealCoolingRatio(double val)
+    private static native void setAnnealCoolingRatio_0(long nativeObj, double val);
+
+    // C++:  void setAnnealFinalT(double val)
+    private static native void setAnnealFinalT_0(long nativeObj, double val);
+
+    // C++:  void setAnnealInitialT(double val)
+    private static native void setAnnealInitialT_0(long nativeObj, double val);
+
+    // C++:  void setAnnealItePerStep(int val)
+    private static native void setAnnealItePerStep_0(long nativeObj, int val);
 
     // C++:  void setBackpropMomentumScale(double val)
     private static native void setBackpropMomentumScale_0(long nativeObj, double val);

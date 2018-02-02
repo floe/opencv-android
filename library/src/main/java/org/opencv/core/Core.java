@@ -14,14 +14,17 @@ import org.opencv.core.Scalar;
 import org.opencv.core.TermCriteria;
 import org.opencv.utils.Converters;
 
+// C++: class Core
+//javadoc: Core
+
 public class Core {
 
     // these constants are wrapped inside functions to prevent inlining
-    private static String getVersion() { return "3.3.1"; }
-    private static String getNativeLibraryName() { return "opencv_java331"; }
+    private static String getVersion() { return "3.4.0"; }
+    private static String getNativeLibraryName() { return "opencv_java340"; }
     private static int getVersionMajor() { return 3; }
-    private static int getVersionMinor() { return 3; }
-    private static int getVersionRevision() { return 1; }
+    private static int getVersionMinor() { return 4; }
+    private static int getVersionRevision() { return 0; }
     private static String getVersionStatus() { return ""; }
 
     public static final String VERSION = getVersion();
