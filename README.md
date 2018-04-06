@@ -8,7 +8,7 @@ This repository has JitPack.io support, so you can integrate it directly into yo
 
 *__Note__:* this is only the Java component. You will also need to install the *OpenCV Manager* app, which provides the native libraries and is either available from the Play Store (outdated) or directly as an APK from https://github.com/floe/opencv-android/tree/master/manager. A minimal sample using just the Java interface is available at https://github.com/floe/opencv-tutorial-1-camerapreview.
 
-*__Note__:* if you want to build native code using OpenCV in your app, then you also need to download and unzip the corresponding "OpenCV Android SDK 3.4.0" from https://github.com/opencv/opencv/releases/download/3.4.0/opencv-3.4.0-android-sdk.zip and edit `app/build.gradle` to set the CMake config path to `/path/to/opencv-android-sdk-3.4.0/sdk/native/jni/`. An example project using this approach is available at https://github.com/floe/opencv-tutorial-2-mixedprocessing.
+*__Note__:* if you want to build native code using OpenCV in your app, then you also need to download and unzip the corresponding "OpenCV Android SDK 3.4.0" from https://github.com/opencv/opencv/releases/download/3.4.1/opencv-3.4.1-android-sdk.zip and edit `app/build.gradle` to set the CMake config path to `/path/to/opencv-android-sdk-3.4.1/sdk/native/jni/`. An example project using this approach is available at https://github.com/floe/opencv-tutorial-2-mixedprocessing.
 
 ## Background
 
